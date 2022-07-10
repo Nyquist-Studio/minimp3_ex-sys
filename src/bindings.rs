@@ -11,7 +11,7 @@ pub const MP3D_E_MEMORY: libc::c_int = -2;
 pub const MP3D_E_IOERROR: libc::c_int = -3;
 pub const MP3D_E_USER: libc::c_int = -4;
 pub const MP3D_E_DECODE: libc::c_int = -5;
-pub type wchar_t = libc::c_int;
+pub type wchar_t = u16;
 #[repr(C)]
 #[derive(Debug)]
 pub struct mp3dec_frame_info_t {
